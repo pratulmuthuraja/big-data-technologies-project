@@ -18,7 +18,8 @@ Here is the paper used as reference for this project - [ZHT Paper](http://datasy
 ## TODO
 
 - [x] Evaluation Code for each Systems
-- [ ] Python Code to plot values obtained to generate graph
+- [x] Python Code to plot values obtained to generate graph
 - [ ] Report
 - [x] Requirements file
 - [ ] Add comments to code
+- [ ] Save output to file and read from that as input in plotter.py
