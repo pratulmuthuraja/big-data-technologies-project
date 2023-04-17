@@ -19,7 +19,8 @@ Here is the paper used as reference for this project - [ZHT Paper](http://datasy
 
 ## TODO
 
-- Evaluation Code for each Systems
-- Python Code to plot values obtained to generate graph
-- Report
-- Requirements file
+- [x] Evaluation Code for each Systems
+- [ ] Python Code to plot values obtained to generate graph
+- [ ] Report
+- [ ] Requirements file
+- [ ] Add comments to code
