@@ -1,5 +1,3 @@
-# CSP 554 - Big Data Technologies Final Project
-
 # Empirical Evaluation of Distributed Key/Value Storage Systems
 
 ## Pratul Palaniappa Muthuraja - A20444489
@@ -22,5 +20,5 @@ Here is the paper used as reference for this project - [ZHT Paper](http://datasy
 - [x] Evaluation Code for each Systems
 - [ ] Python Code to plot values obtained to generate graph
 - [ ] Report
-- [ ] Requirements file
+- [x] Requirements file
 - [ ] Add comments to code
