@@ -69,10 +69,18 @@ def performance_metrics(start, end):
     time_diff = end - start
     throughput = ops/time_diff
     latency = cluster.metrics.request_timer['mean']
-    print(f"Number of operations: {ops}")
+    
+    performance_dict = {
+        "time": time_diff,
+        "throughput": throughput,
+        "latency": latency
+    }
     print(f"Time to execute: {time_diff} secs")
     print(f"Throughput: {throughput} ops/sec")
     print(f"Latency: {latency}s")
+
+    with open("cassandra_bench", "w") as outfile:
+        json.dump(performance_dict, outfile)
 
 # Insert 10 random records
 def insert():
