@@ -40,10 +40,17 @@ def performance(number_of_operations, start, end):
     time_elapsed = end - start
     throughput = number_of_operations / (time_elapsed / (10 ** 9))
     latency = (time_elapsed / (10 ** 6)) / number_of_operations
+    performance_dict = {
+        "time": time_elapsed / (10 ** 9),
+        "throughput": throughput,
+        "latency": latency
+    }
     print("Time to execute: ", time_elapsed / (10 ** 9), "secs")
     print("Throughput: ", throughput, "ops/sec")
     print("Latency: ", latency, "ms")
 
+    with open("couch_bench.json", "w") as outfile:
+        json.dump(performance_dict, outfile)
 
 def perform_operations():
     print("Inside Perform Operations")
