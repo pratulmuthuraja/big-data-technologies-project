@@ -23,3 +23,5 @@ Here is the paper used as reference for this project - [ZHT Paper](http://datasy
 - [x] Requirements file
 - [ ] Add comments to code
 - [ ] Save output to file and read from that as input in plotter.py
+
+## Setup
