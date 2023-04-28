@@ -1,5 +1,6 @@
 import sys
 import time
+import json
 
 from cassandra.cluster import Cluster
 from cassandra.metrics import Metrics

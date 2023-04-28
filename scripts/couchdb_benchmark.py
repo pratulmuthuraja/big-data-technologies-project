@@ -1,6 +1,6 @@
 import time
 import couchdb
-
+import json
 
 try:
     couch = couchdb.Server('https://admin:password@node1:5984/')
