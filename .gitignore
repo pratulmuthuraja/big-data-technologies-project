@@ -1,1 +1,4 @@
 .DS_Store
+./scripts/.terraform/
+.terraform/
+.terraform.lock.hcl

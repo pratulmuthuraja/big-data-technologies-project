@@ -5,7 +5,7 @@ import json
 from cassandra.cluster import Cluster
 from cassandra.metrics import Metrics
 
-KEYSPACE = "hw7"
+KEYSPACE = "cassandra"
 TABLENAME = "benchmark"
 
 THREADS = 4
@@ -80,7 +80,7 @@ def performance_metrics(start, end):
     print(f"Throughput: {throughput} ops/sec")
     print(f"Latency: {latency}s")
 
-    with open("cassandra_bench", "w") as outfile:
+    with open(f"cassandra_bench.json", "w") as outfile:
         json.dump(performance_dict, outfile)
 
 # Insert 10 random records
